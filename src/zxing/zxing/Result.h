@@ -58,5 +58,6 @@ public:
   friend std::ostream& operator<<(std::ostream &out, Result& result);
 };
 
+std::ostream& operator<<(std::ostream &out, Result& result);
 }
 #endif // ZXING_RESULT_H
