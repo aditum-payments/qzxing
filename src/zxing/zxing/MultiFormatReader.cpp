@@ -135,6 +135,11 @@ void MultiFormatReader::enableReaders(zxing::DecodeHints hints, bool allowAll)
       readers_.push_back(Ref<Reader>(new zxing::oned::MultiFormatOneDReader(hints)));
     }
   #endif
+    
+  (void)addOneDReader;
+  (void)tryHarder;
+  (void)allowAll;
+  (void)hints;
 }
 
 Ref<Result> MultiFormatReader::decodeInternal(Ref<BinaryBitmap> image) {
